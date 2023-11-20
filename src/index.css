@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #232323;
+  color: white;
+  justify-content: center;
+  height: 100vh;
+}
+
+video {
+  width: 70%;
+  margin-inline: auto;
+  height: 450px;
+  border-radius: 2px;
+  background: #333333;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  font-weight: 900;
+}
+
+.btn-group {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 20px;
+}
+
+.btn {
+  background: transparent;
+  font-size: 1.4rem;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 2px;
+  font-weight: 700;
+  border: 0;
+}
+
+.btn:disabled {
+  opacity: 50%;
+  cursor: not-allowed;
+}
+
+.start {
+  background: greenyellow;
+}
+
+.end {
+  background: coral;
+}
+
+select {
+  appearance: none;
+  border: 0;
+  outline: 0;
+  background: none;
+  color: inherit;
+  box-shadow: none;
+}
+
+select:disabled {
+  opacity: 30%;
+  cursor: not-allowed;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  display: block;
+  min-width: 320px;
+  width: 100%;
+  max-width: 320px;
+  padding: 6px 16px;
+  font-size: 20px;
+  line-height: 1.75;
+  color: white;
+  background-color: #333333;
+  -ms-word-break: normal;
+  word-break: normal;
+  border-radius: 2px;
+}
